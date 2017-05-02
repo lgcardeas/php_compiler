@@ -1,0 +1,54 @@
+digraph {
+
+	ordering=out;
+	ranksep=.4;
+	bgcolor="lightgrey"; node [shape=box, fixedsize=false, fontsize=12, fontname="Helvetica-bold", fontcolor="blue"
+		width=.25, height=.25, color="black", fillcolor="white", style="filled, solid, bold"];
+	edge [arrowsize=.5, color="black", style="bold"]
+
+  n0 [label=""];
+  n1 [label="INIT"];
+  n1 [label="INIT"];
+  n2 [label="int"];
+  n3 [label="a"];
+  n4 [label="1"];
+  n5 [label="INIT"];
+  n5 [label="INIT"];
+  n6 [label="int"];
+  n7 [label="b"];
+  n8 [label="2"];
+  n9 [label="INIT"];
+  n9 [label="INIT"];
+  n10 [label="int"];
+  n11 [label="c"];
+  n12 [label="2"];
+  n13 [label="write"];
+  n13 [label="write"];
+  n14 [label="a"];
+  n15 [label="write"];
+  n15 [label="write"];
+  n16 [label="b"];
+  n17 [label="write"];
+  n17 [label="write"];
+  n18 [label="c"];
+
+  n0 -> n1 // "" -> "INIT"
+  n1 -> n2 // "INIT" -> "int"
+  n1 -> n3 // "INIT" -> "a"
+  n1 -> n4 // "INIT" -> "1"
+  n0 -> n5 // "" -> "INIT"
+  n5 -> n6 // "INIT" -> "int"
+  n5 -> n7 // "INIT" -> "b"
+  n5 -> n8 // "INIT" -> "2"
+  n0 -> n9 // "" -> "INIT"
+  n9 -> n10 // "INIT" -> "int"
+  n9 -> n11 // "INIT" -> "c"
+  n9 -> n12 // "INIT" -> "2"
+  n0 -> n13 // "" -> "write"
+  n13 -> n14 // "write" -> "a"
+  n0 -> n15 // "" -> "write"
+  n15 -> n16 // "write" -> "b"
+  n0 -> n17 // "" -> "write"
+  n17 -> n18 // "write" -> "c"
+
+}
